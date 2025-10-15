@@ -1,0 +1,16 @@
+package poly.edu.tv00071_lab2.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ParamController {
+    @RequestMapping("/param/form")
+    public String form() {
+        return "form";
+    }
+    @RequestMapping("/param/save/{x}")
+    public String save(/*?1*/ String x, /*?2*/ String y) {
+        return "form";
+    }
+}
